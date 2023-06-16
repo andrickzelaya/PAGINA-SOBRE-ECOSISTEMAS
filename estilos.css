@@ -1,0 +1,91 @@
+nav {
+    background-color: #007cc4dc;
+    padding: 10px;
+  }
+  body {
+     font-family: Arial, sans-serif;
+     background-image: url("https://c.wallhere.com/photos/5f/dd/forest_path_dark_moss_plants_grass_sunlight-36279.jpg!d");
+     background-size: cover;
+     color:  #fcfbfb;
+    }
+ 
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #030303;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  
+  .submenu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  }
+  
+  .submenu:hover .submenu-items {
+    display: block;
+  }
+  
+  .submenu-items li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submenu-items a {
+    display: block;
+    padding: 10px;
+    color: #1d1c1c;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .submenu-items a:hover {
+    background-color: #414040;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .submenu-items {
+      position: static;
+      display: block;
+      box-shadow: none;
+    }
+  
+    .submenu:hover .submenu-items {
+      display: none;
+    }
+  }
+  
+
+
